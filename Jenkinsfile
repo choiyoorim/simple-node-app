@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'oss2022fall'
-        CLUSTER_NAME = 'kube'
+        PROJECT_ID = 'opensource-398613'
+        CLUSTER_NAME = 'k8s'
         LOCATION = 'asia-northeast3-a'
         CREDENTIALS_ID = 'gke'
     }
@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("pjbear/hello:${env.BUILD_ID}")
+                    myapp = docker.build("choiyoorim/hello:${env.BUILD_ID}")
                 }
             }
         }
