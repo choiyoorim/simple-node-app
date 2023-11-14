@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'opensource-398613'
         CLUSTER_NAME = 'k8s'
         LOCATION = 'asia-northeast3-a'
-        CREDENTIALS_ID = 'gke'
+        CREDENTIALS_ID = 'df0db9e1-4540-42ff-9a3f-e562ffc7ffe1'
     }
     stages {
         stage("Checkout code") {
